@@ -1,4 +1,4 @@
-package day01;
+package week01;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -17,7 +17,7 @@ public class S03_암호문3 {
 	static class Node {
 		int data;
 		Node next;
-		
+		 
 		public Node(int data) {
 			this.data = data;
 			this.next = null;
