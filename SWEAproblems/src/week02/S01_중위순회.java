@@ -7,7 +7,7 @@ public class S01_중위순회 {
 	
 	static char[] arr;
 	static int N;
-	static String ans;
+	static String ans = "";
 	
 	public static void main(String[] args) throws Exception {
 		
@@ -23,7 +23,7 @@ public class S01_중위순회 {
 			}
 			inorder(1);
 			System.out.println("#"+tc+" "+ans);
-			System.out.println();
+			ans = "";
 		}
 	}
 	
@@ -34,7 +34,7 @@ public class S01_중위순회 {
 		
 		// 왼쪽 자식 탐색 *2 
 		inorder(cur * 2);
-		ans += cur;
+		ans += arr[cur];
 		// 오른쪽 자식 *2 + 1
 		inorder(cur * 2 + 1);
 		
