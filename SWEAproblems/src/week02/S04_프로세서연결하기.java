@@ -30,6 +30,8 @@ public class S04_프로세서연결하기 {
 				for (int j = 0; j < tmp.length; j++) {
 					arr[i][j] = Integer.parseInt(tmp[j]);
 					
+					// 가장 자리 를 제외한 코어위치 들을 저장 
+					if (i == 0 || j == 0 || i == N - 1 || j == N - 1) continue;
 					if(arr[i][j] == 1) cList.add(new int[] {i, j});
 				}
 			}
