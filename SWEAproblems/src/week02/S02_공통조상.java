@@ -60,6 +60,7 @@ public class S02_공통조상 {
 			int ans = -1;
 			for(int i = 0; i < V; i++) {
 				// 최상위 공통 조상 부터 훑어 내려가면서 다를때가 가장 최근 공통조상 
+				// O(N)
 				if (!ancestorv1.get(i).equals(ancestorv2.get(i))) break;
 				ans = ancestorv1.get(i);
 			}
@@ -76,7 +77,7 @@ public class S02_공통조상 {
 	}
 	
 	// 최상위 부모 노드부터 순차적으로 밑으로 내려가면서 저장 
-	// 나중에 공통조상을 찾기 위함 
+	// 나중에 공통조상을 찾기 위함 O(N)
 	public static void findAns(int idx, ArrayList<Integer> ancestor) {
 		int p = arr[idx].parents;
 		if(p != 0) {
