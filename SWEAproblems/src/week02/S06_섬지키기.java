@@ -58,7 +58,7 @@ public class S06_섬지키기 {
 					int hash = 0;
 					
 					for (int k = 0; k < length; k++) {
-						if (hash + k)
+						if (hash + k) asdf
 					}
 					
 				}
